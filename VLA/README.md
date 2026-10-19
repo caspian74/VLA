@@ -45,3 +45,7 @@ En el proyecto: Settings > Domains & Routes (Workers) o Custom domains (Pages).
 ## Vista local
 
 `npx serve public` o abrir `public/index.html` en el navegador.
+
+## Si el deploy falla con "Could not detect a directory containing static files"
+
+`wrangler.jsonc` y la carpeta `public/` deben estar en la **raíz del repositorio** (no dentro de otra carpeta). Si quedaron dentro de una subcarpeta, mueve todo a la raíz, o en Cloudflare ve a Settings > Build > Root directory y escribe el nombre de esa subcarpeta.
